@@ -7,13 +7,13 @@
 
 /* Main Styles */
 
-#container {
+#grid {
   display: grid;
   grid-template-columns: repeat(var(--gridNum), var(--box-size));
   padding: 10px;
 }
 
-#box {
+.box {
   display: flex;
   border: solid black 1px;
   height: var(--box-size);

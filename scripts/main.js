@@ -1,16 +1,14 @@
-console.log("Hello world!");
-
 function buildGrid(gridNum) {
   let root = document.documentElement;
+  console.log(root);
   root.style.setProperty("--gridNum", gridNum);
-  let container = document.createElement("div");
-  container.id = "container";
-  document.body.appendChild(container);
-  for (let i = 0; i < gridNum * gridNum; i++) {
+  for (let i = 0; i < gridNum ** 2; i++) {
+    let grid = document.getElementById("grid");
     let box = document.createElement("div");
-    box.id = "box";
+    box.className = "box";
+    box.id = `box-${[i + 1]}`;
     box.innerHTML = i + 1;
-    container.appendChild(box);
+    grid.appendChild(box);
   }
 }
 
