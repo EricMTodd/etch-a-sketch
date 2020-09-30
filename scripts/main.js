@@ -1,6 +1,10 @@
+function updateGrid() {
+  let gridNum = document.getElementById("input").value;
+  buildGrid(gridNum);
+}
+
 function buildGrid(gridNum) {
   let root = document.documentElement;
-  console.log(root);
   root.style.setProperty("--gridNum", gridNum);
   for (let i = 0; i < gridNum ** 2; i++) {
     let grid = document.getElementById("grid");
@@ -11,5 +15,3 @@ function buildGrid(gridNum) {
     grid.appendChild(box);
   }
 }
-
-buildGrid(16);
