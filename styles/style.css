@@ -1,12 +1,23 @@
+/* Variables */
+
+:root {
+  --gridNum: 16;
+  --box-size: 50px;
+}
+
+/* Main Styles */
+
 #container {
   display: grid;
-  grid-template-columns: repeat(16, auto);
+  grid-template-columns: repeat(var(--gridNum), var(--box-size));
   padding: 10px;
 }
 
 #box {
+  display: flex;
   border: solid black 1px;
-  height: 50px;
-  width: 50px;
-  text-align: center;
+  height: var(--box-size);
+  width: var(--box-size);
+  justify-content: center;
+  align-items: center;
 }
