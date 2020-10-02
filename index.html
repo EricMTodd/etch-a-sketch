@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html style="--gridNum">
+  <head>
+    <title>Etch-A-Sketch!</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<head>
-  <title>Etch-A-Sketch!</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-
-<body>
-  <div id="container">
-    <form onsubmit="update-grid(); return false;">
-      <label for="input">Choose your grid dimensions: </label>
-      <input type="text" id="input" name="input" />
-      <button type="button" id="update-grid" onclick="updateGrid()">
-        Update Grid
-      </button>
-    </form>
-    <div id="grid"></div>
-  </div>
-  <script src="scripts/main.js"></script>
-</body>
-
+  <body>
+    <div id="container">
+      <form onSubmit="updateGrid(); return false;">
+        <label for="input">Choose your grid dimensions: </label>
+        <input type="text" id="input" name="input" />
+        <button type="button" id="update-grid" onclick="updateGrid()">
+          Update Grid
+        </button>
+      </form>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>

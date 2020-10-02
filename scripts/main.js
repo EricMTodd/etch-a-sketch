@@ -1,21 +1,19 @@
-let input = document.getElementById("input");
-
-input.addEventListener("keydown()", function (e) {
-  if (e.keyCode === 13) {
-    document.getElementById("update-grid").click();
-    e.preventDefault();
-  }
-});
-
 function updateGrid() {
-  console.log("get fukt nerd")
+  let grid = document.getElementById("grid");
+  grid.remove();
+  let gridNum = document.getElementById("input").value;
+  buildGrid(gridNum);
 }
 
 function buildGrid(gridNum) {
   let root = document.documentElement;
   root.style.setProperty("--gridNum", gridNum);
+  root.style;
+  let container = document.getElementById("container");
+  let grid = document.createElement("div");
+  grid.id = "grid";
+  container.appendChild(grid);
   for (let i = 0; i < gridNum ** 2; i++) {
-    let grid = document.getElementById("grid");
     let box = document.createElement("div");
     box.className = "box";
     box.id = `box-${[i + 1]}`;
