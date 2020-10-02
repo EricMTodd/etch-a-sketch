@@ -10,7 +10,12 @@
     <div id="container">
       <form onSubmit="updateGrid(); return false;">
         <label for="input">Choose your grid dimensions: </label>
-        <input type="text" id="input" name="input" />
+        <input
+          type="text"
+          id="input"
+          name="input"
+          placeholder="enter a number"
+        />
         <button type="button" id="update-grid" onclick="updateGrid()">
           Update Grid
         </button>

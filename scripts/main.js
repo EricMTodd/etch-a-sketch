@@ -1,18 +1,22 @@
 function updateGrid() {
   let grid = document.getElementById("grid");
-  grid.remove();
   let gridNum = document.getElementById("input").value;
+
+  grid.remove();
   buildGrid(gridNum);
+  document.getElementById("input").value = "";
 }
 
 function buildGrid(gridNum) {
   let root = document.documentElement;
-  root.style.setProperty("--gridNum", gridNum);
-  root.style;
   let container = document.getElementById("container");
   let grid = document.createElement("div");
+
+  root.style.setProperty("--gridNum", gridNum);
+  root.style;
   grid.id = "grid";
   container.appendChild(grid);
+
   for (let i = 0; i < gridNum ** 2; i++) {
     let box = document.createElement("div");
     box.className = "box";
