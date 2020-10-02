@@ -1,7 +1,7 @@
 /* Variables */
 
 :root {
-  --gridNum: 16;
+  --gridNum: "";
   --box-size: 50px;
 }
 
