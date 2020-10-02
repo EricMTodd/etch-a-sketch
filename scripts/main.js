@@ -1,6 +1,14 @@
+let input = document.getElementById("input");
+
+input.addEventListener("keydown()", function (e) {
+  if (e.keyCode === 13) {
+    document.getElementById("update-grid").click();
+    e.preventDefault();
+  }
+});
+
 function updateGrid() {
-  let gridNum = document.getElementById("input").value;
-  buildGrid(gridNum);
+  console.log("get fukt nerd")
 }
 
 function buildGrid(gridNum) {
@@ -15,3 +23,5 @@ function buildGrid(gridNum) {
     grid.appendChild(box);
   }
 }
+
+buildGrid(16);
