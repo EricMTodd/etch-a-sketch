@@ -1,3 +1,10 @@
+document.onmouseover = function (e) {
+  if (e.target.className === "box") {
+    let currentBox = e.target.id;
+    console.log(currentBox);
+  };
+};
+
 function buildGrid(gridNum) {
   let root = document.documentElement;
   let container = document.getElementById("container");
@@ -11,7 +18,7 @@ function buildGrid(gridNum) {
     let box = document.createElement("div");
 
     box.className = "box";
-    box.id = `box-${[i + 1]}`;
+    box.id = [i + 1];
     box.innerHTML = i + 1;
     grid.appendChild(box);
   }
