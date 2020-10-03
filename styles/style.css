@@ -8,11 +8,19 @@
 /* Main Styles */
 
 form {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   padding: 10px;
 }
 
+form, input, button {
+  margin-left: 10px;
+}
+
 #container {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 #grid {
