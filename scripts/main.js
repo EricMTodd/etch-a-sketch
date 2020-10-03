@@ -1,7 +1,8 @@
 document.onmouseover = function (e) {
   if (e.target.className === "box") {
-    let currentBox = e.target.id;
-    console.log(currentBox);
+    let boxId = e.target.id;
+    let selectedBox = document.getElementById(boxId);
+    selectedBox.classList.add("etched");
   };
 };
 
@@ -19,7 +20,7 @@ function buildGrid(gridNum) {
 
     box.className = "box";
     box.id = [i + 1];
-    box.innerHTML = i + 1;
+    // box.innerHTML = i + 1;
     grid.appendChild(box);
   }
 }
