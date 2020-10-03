@@ -7,15 +7,24 @@
 
 /* Main Styles */
 
+form {
+  padding: 10px;
+}
+
+#container {
+  margin: 0 auto;
+}
+
 #grid {
   display: grid;
   grid-template-columns: repeat(var(--gridNum), var(--box-size));
-  padding: 10px;
+  border: 5px solid black;
+  max-width: calc(var(--gridNum) * var(--box-size));
 }
 
 .box {
   display: flex;
-  border: solid black 1px;
+  /* border: solid black 1px; */
   height: var(--box-size);
   width: var(--box-size);
   justify-content: center;
