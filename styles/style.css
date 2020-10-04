@@ -18,6 +18,12 @@ form, input, button {
   margin-left: 10px;
 }
 
+#content-wrapper {
+  padding: 50px;
+  background-color: #03c8ff
+  border-radius: 15px;
+}
+
 #container {
   display: flex;
   justify-content: center;
@@ -28,6 +34,7 @@ form, input, button {
   grid-template-columns: repeat(var(--gridNum), var(--box-size));
   border: 5px solid black;
   max-width: calc(var(--gridNum) * var(--box-size));
+  background-color: #fff;
 }
 
 .box {
