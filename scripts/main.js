@@ -3,7 +3,7 @@ document.onmouseover = function (e) {
     let boxId = e.target.id;
     let selectedBox = document.getElementById(boxId);
     selectedBox.classList.add("etched");
-  };
+  }
 };
 
 function buildGrid(gridNum) {
@@ -33,6 +33,5 @@ function updateGrid() {
   buildGrid(gridNum);
   document.getElementById("input").value = "";
 }
-
 
 buildGrid(16);
