@@ -2,6 +2,15 @@
   --gridSize: "";
 }
 
+#content-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #42aaf5;
+  width: 700px;
+  padding: 10px 0 50px 0;
+  border-radius: 30px;
+}
+
 #grid {
   display: grid;
   text-align: center;
@@ -12,6 +21,7 @@
   grid-template-rows: repeat(var(--gridSize), 1fr);
   height: 550px;
   width: 550px;
+  background-color: #fff;
 }
 
 .cell {
@@ -20,4 +30,12 @@
 
 .etched {
   background-color: black;
+}
+
+h1 {
+  color: #fff;
+}
+
+form {
+  padding-bottom: 30px;
 }
