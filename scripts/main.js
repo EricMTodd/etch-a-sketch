@@ -24,4 +24,11 @@ function buildGrid(gridSize) {
   }
 }
 
+function updateGrid() {
+  let grid = document.getElementById("grid");
+  grid.remove();
+  let input = document.getElementById("input").value;
+  buildGrid(input);
+}
+
 buildGrid(32);
