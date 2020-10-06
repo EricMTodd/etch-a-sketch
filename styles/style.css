@@ -6,6 +6,8 @@
   display: grid;
   text-align: center;
   margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 15px;
   grid-template-columns: repeat(var(--gridSize), 1fr);
   grid-template-rows: repeat(var(--gridSize), 1fr);
   height: 550px;
@@ -13,5 +15,9 @@
 }
 
 .cell {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+.etched {
+  background-color: black;
 }

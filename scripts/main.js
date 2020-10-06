@@ -1,3 +1,11 @@
+document.onmouseover = function (e) {
+  if (e.target.className === "cell") {
+    let cellId = e.target.id;
+    let selectedCell = document.getElementById(cellId);
+    selectedCell.className = "etched";
+  }
+};
+
 function buildGrid(gridSize) {
   let container = document.querySelector('#container');
   let grid = document.createElement("div");
