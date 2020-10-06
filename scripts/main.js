@@ -1,10 +1,19 @@
-function buildGrid(rows, cols) {
-  for (let i = 0; i < rows; i++) {
-    for (let j = 0; j < cols; j++) {
-      document.write(`(${i}, ${j}) `)
-    }
-    document.write("<br>")
+function buildGrid(gridSize) {
+  let container = document.querySelector('#container');
+  let grid = document.createElement("div");
+  grid.id = ('grid');
+
+  grid.style.setProperty('--gridSize', gridSize);
+
+  container.appendChild(grid);
+
+  for (let i = 0; i < (gridSize * gridSize); i++) {
+    let cell = document.createElement("div");
+    cell.className = ('cell');
+    cell.id = i;
+
+    grid.appendChild(cell)
   }
 }
 
-buildGrid(5, 5);
+buildGrid(32);

@@ -1,0 +1,17 @@
+:root {
+  --gridSize: "";
+}
+
+#grid {
+  display: grid;
+  text-align: center;
+  margin: 0 auto;
+  grid-template-columns: repeat(var(--gridSize), 1fr);
+  grid-template-rows: repeat(var(--gridSize), 1fr);
+  height: 550px;
+  width: 550px;
+}
+
+.cell {
+  border: 1px solid black;
+}
