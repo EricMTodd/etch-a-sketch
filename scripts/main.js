@@ -22,6 +22,8 @@ function buildGrid(gridSize) {
 
     grid.appendChild(cell)
   }
+  let input = document.getElementById("input");
+  input.value = "";
 }
 
 function updateGrid() {
