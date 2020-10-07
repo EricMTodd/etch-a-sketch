@@ -8,6 +8,10 @@ document.onmouseover = function (e) {
 
 function buildGrid(gridSize) {
   let container = document.querySelector('#container');
+  let currentDimensions = document.createElement("div");
+  currentDimensions.innerHTML = (`${gridSize}x${gridSize}`)
+  currentDimensions.id = `current-dimensions`;
+  container.appendChild(currentDimensions);
   let grid = document.createElement("div");
   grid.id = ('grid');
 
@@ -27,10 +31,12 @@ function buildGrid(gridSize) {
 }
 
 function updateGrid() {
+  let currentDimensions = document.querySelector("#current-dimensions");
+  currentDimensions.remove();
   let grid = document.getElementById("grid");
   grid.remove();
   let input = document.getElementById("input").value;
   buildGrid(input);
 }
 
-buildGrid(32);
+buildGrid(16);

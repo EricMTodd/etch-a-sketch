@@ -12,6 +12,10 @@
   font-family: sans-serif;
 }
 
+#current-dimensions {
+  padding-bottom: 15px;
+}
+
 #grid {
   display: grid;
   text-align: center;
@@ -38,7 +42,7 @@ h1 {
 }
 
 form {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 input, button {
