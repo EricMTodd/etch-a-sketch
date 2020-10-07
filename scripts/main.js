@@ -32,11 +32,21 @@ function buildGrid(gridSize) {
 
 function updateGrid() {
   let currentDimensions = document.querySelector("#current-dimensions");
-  currentDimensions.remove();
   let grid = document.getElementById("grid");
-  grid.remove();
   let input = document.getElementById("input").value;
-  buildGrid(input);
+
+  if (input === "") {
+    alert("Please enter a number.")
+  } else if (input < 16) {
+    alert("Please pick a number greater than 15.")
+  } else if (input > 100) {
+    alert("Please pick a number less than 101.")
+  } else {
+    currentDimensions.remove();
+    grid.remove();
+    buildGrid(input);
+  }
+  return;
 }
 
 buildGrid(16);
