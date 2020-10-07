@@ -55,3 +55,8 @@ footer {
   padding-bottom: 15px;
   text-align: center;
 }
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
