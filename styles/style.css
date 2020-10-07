@@ -7,7 +7,7 @@
   text-align: center;
   background-color: #42aaf5;
   width: 700px;
-  padding: 10px 0 50px 0;
+  padding-top: 10px;
   border-radius: 30px;
   font-family: sans-serif;
 }
@@ -48,4 +48,10 @@ form {
 input, button {
   padding: 5px;
   border-radius: 5px;
+}
+
+footer {
+  padding-top: 35px;
+  padding-bottom: 15px;
+  text-align: center;
 }
