@@ -27,4 +27,22 @@ const eraseGrid = () => {
 	})
 }
 
+const updateGrid = () => {
+	const rows = document.querySelectorAll(`.row`)
+	const cells = document.querySelectorAll(`.cell`)
+	const input = document.querySelector(`#grid-size`)
+
+	cells.forEach(cell => {
+		cell.remove()
+	})
+
+	rows.forEach(row => {
+		row.remove()
+	})
+
+	eraseGrid()
+	renderGrid(input.value)
+
+}
+
 renderGrid(16)

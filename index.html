@@ -9,6 +9,17 @@
 	<body>
 		<nav>Etch-a-Sketch</nav>
 		<main>
+			<div>				
+				<label for="grid-size"></label>
+				<select id="grid-size" name="grid-size">
+					<option value="16" selected>16x16</option>
+					<option value="32">32x32</option>
+					<option value="64">64x64</option>
+					<option value="128">128x128</option>
+					<option value="256">256x256</option>
+				</select>
+				<button onclick="updateGrid()">Update grid</button>
+			</div>
 			<div class="grid"></div>
 			<button onclick="eraseGrid()">Erase Grid</button>
 		</main>
