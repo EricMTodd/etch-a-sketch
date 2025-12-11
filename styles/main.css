@@ -17,10 +17,13 @@ nav {
 }
 
 main {
-	height: calc(100vh - var(--nav-height));
-	padding: 0 16.5%;
+	min-height: calc(100vh - var(--nav-height));
 	background-color: #212121;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 footer {
@@ -47,4 +50,29 @@ a:hover {
 
 a:active {
 	color: white;
+}
+
+.grid {
+	box-sizing: border-box;
+	border: 1px solid white;
+	justify-content: center;
+	height: calc(80vh - var(--nav-height));
+	width: calc(80vh - var(--nav-height));
+	margin: 15px;
+}
+
+.row {
+	display: flex;
+	height: auto;
+}
+
+.cell {
+	box-sizing: border-box;
+	border: 1px solid white;
+	height: auto;
+	width: auto;
+}
+
+.colored {
+	background-color: white;
 }
